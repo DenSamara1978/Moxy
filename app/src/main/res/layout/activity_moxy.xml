@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <EditText
+        android:id="@+id/moxyEditText"
+        android:layout_width="364dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/moxyAppendButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/moxyAppendButton"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Append Text"
+        app:layout_constraintBottom_toTopOf="@+id/moxyResultTextView"
+        app:layout_constraintEnd_toEndOf="@+id/moxyEditText"
+        app:layout_constraintStart_toStartOf="@+id/moxyEditText"
+        app:layout_constraintTop_toBottomOf="@+id/moxyEditText" />
+
+    <TextView
+        android:id="@+id/moxyResultTextView"
+        android:layout_width="359dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/moxyAppendButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/moxyAppendButton"
+        app:layout_constraintTop_toBottomOf="@+id/moxyAppendButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
